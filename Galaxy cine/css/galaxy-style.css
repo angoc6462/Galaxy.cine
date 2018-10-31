@@ -1,0 +1,276 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	color: #40323b;
+}
+
+.header{
+	width: 100%;
+	height: 90px;
+	/*position: fixed;*/
+	margin: 0;
+	background-color: #f7f9fa;
+	padding: 25px;
+	z-index: 100;
+}
+
+
+
+.header .account a{
+	text-decoration: none;
+	color: #a0a3a7;
+	font-size: 14px;
+}
+
+.header .account a:hover{
+	color: #f26b38;
+}
+
+#my-menu{
+	background-color: #000;
+}
+
+#my-menu li{
+	padding: 0 50px;
+}
+
+#my-menu a{
+	color: #fff;
+}
+
+#nav-dangChieu img{
+    height: 100%;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+#nav-sapChieu img{
+    height: 100%;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.movie-thumb a img{
+	width: 220px;
+	height: auto;
+}
+
+.blog .movie-thumb a {
+    display: block;
+    width: 220px;
+    height: auto;
+}
+
+.blog {
+    display: table;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.blog .movie-thumb {
+    float: left;
+    position: relative;
+    margin: 0 20px 0 0;
+}
+
+.blog .movie-thumb a img {
+    display: block;
+    width: 220px;
+    height: auto;
+}
+
+.blog-like{
+	list-style-type: none;
+}
+
+.blog-like li{
+	display: inline;
+}
+
+.btn-like{
+	background-color: #365899;
+	color: #fff;
+    padding: 0 5px;
+    border-radius: 3px;
+    border: #365899;
+    font-size: 14px;
+}
+
+.view-eye{
+	background-color: #e9edf1;
+	color: #43464b;
+    border-radius: 3px;
+    padding: 0px 10px 1px 10px;
+}
+
+.my-footer{
+	background-color: #1a1a1a;
+	color: #a0a3a7;
+}
+
+.my-footer ul{
+	list-style-type: none;
+}
+
+.my-footer ul a{
+	text-decoration: none;
+	color: #a0a3a7;
+	font-size: 15px;
+}
+
+.my-footer ul li{
+	padding-bottom: 10px;
+}
+
+.footer-para{
+	display: inline-block;
+	padding: 17px 25px;
+}
+
+.footer-line{
+	border-top: 1px solid #a0a3a7;
+}
+
+.footer-container h5{
+	border-left: 5px solid #f26b38;
+	padding-left: 16px; 
+}
+
+.f-icons i{
+	padding: 15px 8px;
+	font-size: 30px;
+}
+
+.fa-facebook-official:hover{
+	color: #337ab7;
+}
+
+.fa-youtube-square:hover{
+	color: #f00;
+}
+
+.fa-instagram:hover{
+	color: #f87f2c;
+}
+
+.dowload-icons i:hover{
+	color: #f87f2c;
+}
+/*===============*/
+.hovereffect {
+width:100%;
+height:100%;
+float:left;
+overflow:hidden;
+position:relative;
+text-align:center;
+cursor:default;
+}
+
+.hovereffect .overlay {
+width:100%;
+height:100%;
+position:absolute;
+overflow:hidden;
+top:0;
+left:0;
+opacity:0;
+background-color:rgba(0,0,0,0.5);
+-webkit-transition:all .4s ease-in-out;
+transition:all .4s ease-in-out
+}
+
+.hovereffect img {
+display:block;
+position:relative;
+-webkit-transition:all .4s linear;
+transition:all .4s linear;
+}
+
+.hovereffect a.info {
+text-decoration:none;
+display:inline-block;
+text-transform:uppercase;
+color:#fff;
+border:1px solid #fff;
+background-color:transparent;
+opacity:0;
+filter:alpha(opacity=0);
+-webkit-transition:all .2s ease-in-out;
+transition:all .2s ease-in-out;
+margin:120px 0 0;
+padding:7px 14px;
+}
+
+.hovereffect a.info:hover {
+box-shadow:0 0 5px #fff;
+}
+
+.hovereffect:hover img {
+-ms-transform:scale(1);
+-webkit-transform:scale(1);
+transform:scale(1.1);
+}
+
+.hovereffect:hover .overlay {
+opacity:1;
+filter:alpha(opacity=100);
+}
+
+.hovereffect:hover a.info {
+opacity:1;
+filter:alpha(opacity=100);
+-ms-transform:translatey(0);
+-webkit-transform:translatey(0);
+transform:translatey(0);
+}
+
+.hovereffect:hover a.info {
+-webkit-transition-delay:.2s;
+transition-delay:.2s;
+}
+
+.movie-title{
+    font-size: 16px;
+    color: #43464b;
+    text-transform: capitalize;
+    line-height: 20px;
+    text-overflow: ellipsis;
+}
+
+.cmtBlog{
+	line-height: 1.5;
+	font-size: 18px;
+	font-weight: 500;
+	color: #43464b;
+}
+
+.cmt-blog a{
+	text-decoration: none;
+}
+
+.cmtBlog:hover{
+	color: #f26b38;
+}
+
+.blog-content{
+	color: #a0a3a7;
+	font-size: 14px;
+}
+
+.input-group-text{
+    display: flex;
+    align-items: center;
+    padding: 0.375rem 0.75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: ##a0a3a7;
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid #ced4da;
+}

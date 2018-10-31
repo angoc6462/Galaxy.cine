@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Galaxy Cine</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="plugins/bootstrap-4.1.0/css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/galaxy-style.css">
+	<link rel="icon" type="image/png" href="img/logo-tab1.png">
+	<script type="text/javascript" scr="plugins/bootstrap-4.1.0/js/bootstrap.js"></script>
+</head>
+<body>
+	<!-- HEADER -->
+	<div class="row header">
+		<div class="col-md-4 logo-cine">
+			<a href=""><img src="img/galaxy-logo.png"></a>
+		</div>		
+		<div class="col-md-4 search-bar">
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="Tìm tên phim, diễn viên...">
+				<div class="input-group-append">
+    				<span class="input-group-text"><i class="fa fa-search"></i></span>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 text-right">
+						<button type="button" class="btn btn-link text-muted" data-toggle="modal" data-target="#my-modal">Đăng nhập</button>
+						<span> <span class="text-warning">VN</span>| EN</span>
+	<!-- MODAL -->
+	<div id="my-modal" class="modal fade" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<!-- MODAL HEADER -->
+				<div class="modal-header">
+					<!-- MODAL TITLE -->
+						<ul class="nav nav-tabs" id="myTab" role="tablist">
+						    <li class="nav-item">
+						      <a class="nav-link active text-warning" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">ĐĂNG NHẬP</a>
+						    </li>
+						    <li class="nav-item">
+						      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">ĐĂNG KÝ</a>
+						    </li>
+						</ul>
+					<!-- MODAL TITLE END -->
+					<button type="button" class="close" data-dismiss='modal'>
+						<span area-hidden="true">&times;</span>
+					</button>
+				</div>
+				<!-- MODAL HEADER END -->
+				<div class="modal-body">
+					<div class="tab-content" id="myTabContent">
+					<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+				  	<!-- ROW 1  -->
+					    <form class="mx-5">
+							<div class="form-group">
+							  	<p class="text-muted text-center">Vui lòng đăng nhập trước khi mua vé để tích luỹ điểm, cơ hội nhận thêm nhiều ưu đãi từ chương trình thành viên Galaxy Cinema.</p>
+							    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+							</div>
+						  	<div class="form-group">
+						    	<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+						  	</div>
+						  	<small id="emailHelp" class="form-text text-muted">Quên mật khẩu?</small>
+						  	<button type="submit" class="btn btn-warning mt-2 btn-lg px-5 text-white">ĐĂNG NHẬP</button>
+						</form>
+				    <!-- END ROW 1 -->
+
+				    </div>
+				    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+				  	<!-- ROW 2 -->
+				  		<!-- HỌ TÊN -->
+				        <div class="form-group">
+				        	<input type="text" class="form-control" placeholder="Họ và Tên" name="">
+				        </div>
+				        <!-- END HỌ TÊN -->
+
+				        <!-- SĐT VÀ GIỚI TÍNH -->
+				        <div class="row mb-3">
+				        	<div class="col">
+					        	<input type="text" class="form-control" placeholder="Số điện thoại" name="">
+				        	</div>
+				        	<div class="col">
+					        	<select class="form-control">
+					        		<option>Nam</option>
+					        		<option>Nữ</option>
+					        	</select>
+				        	</div>
+				        </div> 
+				        <!-- END SĐT & GIỚI TÍNH -->
+				        <!-- EMAIL  -->
+				        <div class="form-group">
+				        	<input type="text" class="form-control" placeholder="Email" name="">
+				        </div>
+				        <!-- END EMAIL --> 
+
+				        <!-- MẬT KHẨU VÀ XÁC NHẬN -->
+				        <div class="row mb-3">
+				        	<div class="col">
+					        	<input type="text" class="form-control" placeholder="Mật khẩu" name="">
+				        	</div>
+				        	<div class="col">
+					        	<input type="text" class="form-control" placeholder="Xác nhận mật khẩu" name="">
+				        	</div>
+				        </div>    
+				        <!-- END MẬT KHẨU VÀ XÁC NHẬN -->
+
+				        <!-- CHỌN THÀNH PHỐ VÀ QUẬN -->
+				        <div class="row">
+				        	<div class="col form-group">
+				        		<select class="form-control">
+				        			<option>TP.HCM</option>
+				        			<option>Hà Nội</option>
+				        			<option>Đà Nẵng</option>
+				        		</select>
+				        	</div>
+				        	<div class="col form-group">
+				        		<select class="form-control">
+				        			<option>1</option>
+				        			<option>2</option>
+				        			<option>3</option>
+				        		</select>
+				        	</div>
+				        	
+				        </div>
+				        <!-- END CHỌN THÀNH PHỐ & QUẬN -->
+				        
+				    	<!-- ĐỊA CHỈ VÀ NGÀY -->
+				    	<div class="form-group">
+				        	<input type="text" class="form-control" placeholder="Địa chỉ" name="">
+				        </div>
+				        <div class="form-group">
+				        	<input type="date" class="form-control" placeholder="Chọn ngày (dd/mm/yy)" name="">
+				        </div>
+				        <!-- END ĐỊA CHỈ VÀ NGÀY -->
+				        <div>
+				        	<p>Tôi đã đọc và đồng ý với <span class="text-warning">CHÍNH SÁCH</span> của chương trình.</p>
+				        </div>
+				        <button class="btn btn-warning text-white">ĐĂNG KÍ</button>
+				    </div>
+				        <!-- END ROW 2 -->
+				    </div>
+				</div>
+			</div>
+	<!-- END MODAL -->
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<!-- MENU -->
+	<ul class="nav px-5 bg-dark">
+			  <li class="nav-item mx-auto">
+			    <a class="nav-link text-light" href="#">MUA VÉ</a>
+			  </li>
+			  <!--  -->
+			  <li class="nav-item dropdown mx-auto">
+			    <a class="nav-link dropdown-toggle text-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">PHIM</a>
+			    <div class="dropdown-menu">
+			      <a class="dropdown-item" href="#">PHIM ĐANG CHIẾU</a>
+			      <div class="dropdown-divider"></div>
+			      <a class="dropdown-item" href="#">PHIM SẮP CHIẾU</a>
+			    </div>
+			  </li>
+			  <!--  -->
+			  <!--  -->
+			  <li class="nav-item dropdown mx-auto">
+			    <a class="nav-link dropdown-toggle text-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">GÓC ĐIỆN ẢNH</a>
+			    <div class="dropdown-menu">
+			      <a class="dropdown-item" href="#">THỂ LOẠI PHIM</a>
+			      <a class="dropdown-item" href="#">DIỄN VIÊN</a>
+			      <a class="dropdown-item" href="#">ĐẠO DIỄN</a>
+			      <a class="dropdown-item" href="#">BÌNH LUẬN PHIM</a>
+			      <a class="dropdown-item" href="#">BLOG ĐIỆN ẢNH</a>
+			    </div>
+			  </li>
+			  <!--  -->
+			  <!--  -->
+			  <li class="nav-item dropdown mx-auto">
+			    <a class="nav-link dropdown-toggle text-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">SỰ KIỆN</a>
+			    <div class="dropdown-menu">
+			      <a class="dropdown-item" href="#">ƯU ĐÃI</a>
+			      <div class="dropdown-divider"></div>
+			      <a class="dropdown-item" href="#">PHIM SẮP CHIẾU</a>
+			    </div>
+			  </li>
+			  <!--  -->
+			  <li class="nav-item mx-auto">
+			    <a class="nav-link text-light" href="#">RẠP/GIÁ VÉ</a>
+			  </li>
+			  <li class="nav-item mx-auto">
+			    <a class="nav-link text-light" href="#">HỖ TRỢ</a>
+			  </li>
+			  <li class="nav-item mx-auto">
+			    <a class="nav-link text-light" href="#">THÀNH VIÊN</a>
+			  </li>
+	</ul>
+	
+	<!-- SLIDESHOW -->
+	<div id="my-slide" class="carousel slide" data-ride="carousel" data-interval="2000" data-keyboard='true' >
+		<ol class="carousel-indicators">
+			<li data-target="#my-slide" data-slide-to="0" class="active"></li>
+			<li data-target="#my-slide" data-slide-to="1"></li>
+			<li data-target="#my-slide" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+			<!-- slide 1 -->
+			<div class="carousel-item active">
+				<img src="img/slide1.jpg">
+				<div class="carousel-caption d-none d-md-block">
+			</div>
+			</div>
+			<!-- slide 2 -->
+			<div class="carousel-item">
+				<img src="img/slide2.jpg">
+				<div class="carousel-caption d-none d-md-block">
+			</div>
+			</div>
+			<!-- slide 3 -->
+			<div class="carousel-item">
+				<img src="img/slide3.jpg">
+				<div class="carousel-caption d-none d-md-block">
+					
+				</div>
+			</div>
+		</div>	
+	</div>		
+
+	<!-- MAIN CONTENT -->
+	<div class="row">
+		<div class="col-md-12 py-3">
+		<nav class="nav nav-tabs mx-3" id="nav-tab" role="tablist">
+		    <a class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" href="#nav-dangChieu" role="tab" aria-controls="nav-home" aria-selected="true">PHIM ĐANG CHIẾU</a>
+		    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-sapChieu" role="tab" aria-controls="nav-profile" aria-selected="false">PHIM SẮP CHIẾU</a>
+			    
+		</nav>
+		<div class="tab-content mx-5" id="nav-tabContent">
+			<div class="tab-pane fade show active pt-5" id="nav-dangChieu" role="tabpanel" aria-labelledby="nav-home-tab">
+				<div class="row">
+					<div class="col-md-4 pb-5">
+					    <div class="hovereffect">
+					        <img class="img-responsive" src="img/pdc1.jpg" alt="">
+					        <div class="overlay">
+					           <a class="info" href="#">MUA VÉ</a>
+					        </div>
+					    </div>
+					    <div class="movie-title">DEADPOOL 2</div>
+					</div>
+					<div class="col-md-4 pb-5">
+					    <div class="hovereffect">
+					        <img class="img-responsive" src="img/pdc2.jpg" alt="">
+					        <div class="overlay">
+					           <a class="info" href="#">MUA VÉ</a>
+					        </div>
+					    </div>
+					    <div class="movie-title">LOVE, SIMON</div>
+					</div>
+					<div class="col-md-4 pb-5">
+					    <div class="hovereffect">
+					        <img class="img-responsive" src="img/pdc3.jpg" alt="">
+					        <div class="overlay">
+					           <a class="info" href="#">MUA VÉ</a>
+					        </div>
+					    </div>
+					    <div class="movie-title">DEATH WISH</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="hovereffect">
+					        <img class="img-responsive" src="img/pdc4.jpg" alt="">
+					        <div class="overlay">
+					           <a class="info" href="#">MUA VÉ</a>
+					        </div>
+					    </div>
+					    <div class="movie-title">100 NGÀY BÊN EM</div>
+					</div>
+					<div class="col-md-4">
+						<div class="hovereffect">
+					        <img class="img-responsive" src="img/pdc5.jpg" alt="">
+					        <div class="overlay">
+					           <a class="info" href="#">MUA VÉ</a>
+					        </div>
+					    </div>
+					    <div class="movie-title">11 NIỀM HY VỌNG</div>
+					</div>
+					<div class="col-md-4">
+						<div class="hovereffect">
+					        <img class="img-responsive" src="img/pdc6.jpg" alt="">
+					        <div class="overlay">
+					           <a class="info" href="#">MUA VÉ</a>
+					        </div>
+					    </div>
+					    <div class="movie-title">SNATCH UP</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-pane fade" id="nav-sapChieu" role="tabpanel" aria-labelledby="nav-profile-tab">
+				<div class="row">
+					<div class="col-md-4">
+						<img src="img/pxc1.jpg">
+					</div>
+					<div class="col-md-4">
+						<img src="img/pxc2.jpg">
+					</div>
+					<div class="col-md-4">
+						<img src="img/pxc3.jpg">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<img src="img/pxc4.jpg">
+					</div>
+					<div class="col-md-4">
+						<img src="img/pxc5.jpg">
+					</div>
+					<div class="col-md-4">
+						<img src="img/pxc6.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- CMT & BLOG -->
+		<div class="row cmt-blog mt-5 px-4">
+			<div class="col-md-6 cmt">
+				<h3><a href="#" class="cmtBlog">BÌNH LUẬN PHIM</a></h3>
+				<!-- CMT 1 -->
+				<div class="blog">
+					<div class="movie-thumb">
+						<a href="#" class="has-overlay"><img src="img/blp1.jpg"></a>
+					</div>
+					<h5>[Review] Love, Simon: Dễ Thương Và Ấm Áp</h5>
+					<ul class="blog-like">
+						<li><button class="btn-like"><span class="fa fa-thumbs-up"> Thích </span> <span>255</span></button></li>
+						<li><span class="view-eye"><i class="fa fa-eye"></i><span>5104</span></span></li>
+					</ul>
+					<div class="blog-content">
+						<p>Love, Simon chắc chắn sẽ mang đến cho khán giả một câu chuyện tình yêu đồng tính tuổi teen vô cùng dễ thương và ấm áp...</p>
+					</div>
+				</div>
+				
+				<!-- CMT 2 -->
+				<div class="blog">
+					<div class="movie-thumb">
+						<a href="#" class="has-overlay"><img src="img/blp2.jpg"></a>
+					</div>
+					<h5>[Review] Avengers Infinity War: MCU Nay Đã Vượt Xa Các Vũ Trụ Điện Ảnh Khác</h5>
+					<ul class="blog-like">
+						<li><button class="btn-like"><span class="fa fa-thumbs-up"> Thích </span> <span>255</span></button></li>
+						<li><span class="view-eye"><i class="fa fa-eye"></i><span>5104</span></span></li>
+					</ul>
+					<div class="blog-content">
+						<p>Năm 2012, không ai nghĩ The Avengers có thể thành công khi một bộ phim tận sáu tuyến nhân...</p>
+					</div>
+				</div>
+				
+				<!-- CMT 3 -->
+				<div class="blog">
+					<div class="movie-thumb">
+						<a href="#" class="has-overlay"><img src="img/blp3.jpg"></a>
+					</div>
+					<h5>[Review] 100 Ngày Bên Em: Sự Trở Lại Đáng Tự Hào Của Vũ Ngọc Phượng</h5>
+					<ul class="blog-like">
+						<li><button class="btn-like"><span class="fa fa-thumbs-up"> Thích </span> <span>255</span></button></li>
+						<li><span class="view-eye"><i class="fa fa-eye"></i><span>5104</span></span></li>
+					</ul>
+					<div class="blog-content">
+						<p>Sau 12 Chòm Sao: Vẽ Đường Cho Yêu Chạy, sự trở lại của đạo diễn trẻ Vũ Ngọc Phượng với “100 Ngày Bên Em...</p>
+					</div>
+				</div>
+				
+				<!-- CMT 4 -->
+				<div class="blog">
+					<div class="movie-thumb">
+						<a href="#" class="has-overlay"><img src="img/blp4.jpg"></a>
+					</div>
+					<h5>[Preview] Deadpool 2: Sẽ Tiếp Nối Được Thành Công Khủng Của Phần 1?</h5>
+					<ul class="blog-like">
+						<li><button class="btn-like"><span class="fa fa-thumbs-up"> Thích </span> <span>255</span></button></li>
+						<li><span class="view-eye"><i class="fa fa-eye"></i><span>5104</span></span></li>
+					</ul>
+					<div class="blog-content">
+						<p>Chàng siêu anh hùng “bựa” đã trở lại. Liệu lần này Deadpool có làm nên được kỳ tích như phần 1?</p>
+					</div>
+				</div>
+				
+			</div>
+			<div class="col-md-6">
+				<h3><a href="#" class="cmtBlog">BLOG ĐIỆN ẢNH</a></h3>
+				<!-- BLOG 1 -->
+				<div class="blog">
+					<div class="movie-thumb">
+						<a href="#" class="has-overlay"><img src="img/bda1.jpg"></a>
+					</div>
+					<h5>Bóc Phốt Trailer, Lật Mặt Deadpool</h5>
+					<ul class="blog-like">
+						<li><button class="btn-like"><span class="fa fa-thumbs-up"> Thích </span> <span>255</span></button></li>
+						<li><span class="view-eye"><i class="fa fa-eye"></i><span>5104</span></span></li>
+					</ul>
+					<div class="blog-content">
+						<p>Deadpool 2 có gì hot? Có chứ, chỉ cần có Pool - Mọi thứ đều sẽ hot!</p>
+					</div>
+				</div>
+				
+				<!-- BLOG 2 -->
+				<div class="blog">
+					<div class="movie-thumb">
+						<a href="#" class="has-overlay"><img src="img/bda2.jpg"></a>
+					</div>
+					<h5>Love, Simon: Bước Đột Phá Của Phim Đồng Tính</h5>
+					<ul class="blog-like">
+						<li><button class="btn-like"><span class="fa fa-thumbs-up"> Thích </span> <span>255</span></button></li>
+						<li><span class="view-eye"><i class="fa fa-eye"></i><span>5104</span></span></li>
+					</ul>
+					<div class="blog-content">
+						<p>Love, Simon đã xuất hiện, đốn tim người xem mà không cần quan tâm tới những giải thưởng.</p>
+					</div>
+				</div>
+				
+				<!-- BLOG 3 -->
+				<div class="blog">
+					<div class="movie-thumb">
+						<a href="#" class="has-overlay"><img src="img/bda3.jpg"></a>
+					</div>
+					<h5>Avengers Ai Cũng Biết Rồi, Vậy Đám Đệ Tử Thanos Thì Sao?</h5>
+					<ul class="blog-like">
+						<li><button class="btn-like"><span class="fa fa-thumbs-up"> Thích </span> <span>255</span></button></li>
+						<li><span class="view-eye"><i class="fa fa-eye"></i> <span> 5104</span></span></li>
+					</ul>
+					<div class="blog-content">
+						<p>“Biết mình biết ta, trăm trận trăm thắng”, nếu chúng ta đã có quá rõ về các siêu anh hùng thì cũng đừng nên bỏ qua thông tin về đàn em của Thanos nhé!
+						</p>
+					</div>
+				</div>
+				
+				<!-- BLOG 4 -->
+				<div class="blog">
+					<div class="movie-thumb">
+						<a href="#" class="has-overlay"><img src="img/bda4.jpg"></a>
+					</div>
+					<h5>13 Bí Mật Cần Biết Trước Khi Xem Avengers: Infinity War</h5>
+					<ul class="blog-like">
+						<li><button class="btn-like"><span class="fa fa-thumbs-up"> Thích </span> <span>255</span></button></li>
+						<li><span class="view-eye"><i class="fa fa-eye"></i><span>5104</span></span></li>
+					</ul>
+					<div class="blog-content">
+						<p>Dưới đây chính là 13 bí mật mà chúng ta cần biết về bom tấn siêu anh hùng lớn nhất năm "Avengers: Infinity War".</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- PROMOTION -->
+			<div class="px-3 my-3">
+				<div><h3>TIN KHUYẾN MÃI</h3></div>
+				<div class="row px-5">
+				<div class="col-md-3">
+					<a href=""><img src="img/km1.jpg"></a>
+				</div>
+				<div class="col-md-3">
+					<a href=""><img src="img/km2.jpg"></a>
+				</div>
+				<div class="col-md-3">
+					<a href=""><img src="img/km3.jpg"></a>
+				</div>
+				<div class="col-md-3">
+					<a href=""><img src="img/km4.jpg"></a>
+				</div>
+				</div>
+			</div>
+
+		<!-- GALAXY CINEMA -->
+			<div class="galaxy-cinema px-3 my-4">
+				<h3>GALAXY CINEMA</h3>
+				<p>Galaxy Cinema là một trong những công ty tư nhân đầu tiên về điện ảnh được thành lập từ năm 2003, đã khẳng định thương hiệu là 1 trong 10 địa điểm vui chơi giải trí được yêu thích nhất. Ngoài hệ thống rạp chiếu phim hiện đại, thu hút hàng triệu lượt người đến xem, Galaxy Cinema còn hấp dẫn khán giả bởi không khí thân thiện cũng như chất lượng dịch vụ hàng đầu.</p>
+				<p>Đến website galaxycine.vn, quý khách sẽ được cập nhật nhanh chóng các phim hay nhất phim mới nhất đang chiếu hoặc sắp chiếu. Lịch chiếu tại mọi hệ thống rạp chiếu phim của Galaxy Cinema cũng được cập nhật đầy đủ hàng ngày hàng giờ trên trang chủ.</p>
+				<p>Đặt vé tại Galaxy Cinema dễ dàng chỉ sau vài thao tác vô cùng đơn giản. Để mua vé, hãy vào tab Mua vé. Quý khách có thể chọn Mua vé theo phim, theo rạp, theo ngày tùy cách nào tiện lợi nhất cho bản thân.Sau đó, tiến hành mua vé theo các bước hướng dẫn. Chỉ trong vài phút, quý khách sẽ nhận được tin nhắn và email phản hồi Đặt vé thành công của Galaxy Cinema. Quý khách có thể dùng tin nhắn lấy vé tại quầy vé của Galaxy Cinema hoặc quét mã QR để một bước vào rạp mà không cần tốn thêm bất kỳ công đoạn nào nữa.</p>
+				<p>Nếu bạn đã chọn được phim hay để xem, hãy đặt vé cực nhanh bằng box Mua Vé Nhanh ngay từ Trang Chủ. Chỉ cần một phút, tin nhắn và email phản hồi của Galaxy Cinema sẽ gửi ngay vào điện thoại và hộp mail của bạn.</p>
+				<p>Nếu chưa quyết định sẽ xem phim mới nào, hãy tham khảo các bộ phim hay trong mục Phim Đang Chiếu cũng như Phim Sắp Chiếu tại rạp chiếu phim bằng cách vào mục Bình Luận Phim ở Góc Điện Ảnh để đọc những bài bình luận chân thật nhất, tham khảo và cân nhắc. Sau đó, quý khách hãy đặt vé bằng box Mua Vé Nhanh ngay ở đầu trang để chọn được suất chiếu và chỗ ngồi vừa ý nhất.  </p>
+				<p>Galaxy Cinema luôn có những chương trình khuyến mãi, ưu đãi, quà tặng vô cùng hấp dẫn như giảm giá vé, tặng vé xem phim miễn phí, tặng Combo, tặng quà phim…  dành cho quý khách.Trang web galaxycine.vn còn có mục Góc Điện Ảnh - sở hữu lượng dữ liệu về phim, diễn viên và đạo diễn, giúp quý khách dễ dàng chọn được phim mình yêu thích và nâng cao kiến thức về điện ảnh của bản thân. Ngoài ra, vào mỗi tháng, Galaxy Cinema cũng giới thiệu các phim sắp chiếu hot nhất trong mục Phim Hay Tháng để quý khách sớm có sự tính toán.</p>
+				<p>Trang web galaxycine.vn còn có mục Góc Điện Ảnh - sở hữu lượng dữ liệu về phim, diễn viên và đạo diễn, giúp quý khách dễ dàng chọn được phim mình yêu thích và nâng cao kiến thức về điện ảnh của bản thân. Ngoài ra, vào mỗi tháng, Galaxy Cinema cũng giới thiệu các phim sắp chiếu hot nhất trong mục Phim Hay Tháng để quý khách sớm có sự tính toán.</p>
+				<p>Hiện nay, Galaxy Cinema đang ngày càng phát triển hơn nữa với các chương trình đặc sắc, các khuyến mãi hấp dẫn, đem đến cho khán giả những bộ phim bom tấn của thế giới và Việt Nam nhanh chóng và sớm nhất.</p>
+			</div>
+		</div>
+	</div>
+	<!-- FOOTER -->
+	<footer class="my-footer px-4 pt-5">
+		<div class="footer-container row">
+			<div class="col-md-3 ">
+				<ul>
+				<h5>GIỚI THIỆU</h5>
+					<li>
+						<a href=""><i class="fa fa-angle-double-right"></i> VỀ CHÚNG TÔI</a>
+					</li>
+					<li>
+						<a href=""><i class="fa fa-angle-double-right"></i> THỎA THUẬN SỬ DỤNG</a>
+					</li>
+					<li>
+						<a href=""><i class="fa fa-angle-double-right"></i> QUY CHẾ HOẠT ĐỘNG</a>
+					</li>
+					<li>
+						<a href=""><i class="fa fa-angle-double-right"></i> CHÍNH SÁCH BẢO MẬT</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<ul>
+					<h5>GÓC ĐIỆN ẢNH</h5>
+					<li>
+						<a href=""><i class="fa fa-angle-double-right"></i> THỂ LOẠI PHIM</a>
+					</li>
+					<li>
+						<a href=""><i class="fa fa-angle-double-right"></i> BÌNH LUẬN PHIM</a>
+					</li>
+					<li>
+						<a href=""><i class="fa fa-angle-double-right"></i> BLOG ĐIỆN ẢNH</a>
+					</li>
+					<li>
+						<a href=""><i class="fa fa-angle-double-right"></i> PHIM HAY THÁNG</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<ul>
+					<h5>HỖ TRỢ</h5>
+					<li>
+						<a href=""><i class="fa fa-angle-double-right"></i> GÓP Ý</a>
+					</li>
+					<li>
+						<a href=""><i class="fa fa-angle-double-right"></i> SALE & SERVICES</a>
+					</li>
+					<li>
+						<a href=""><i class="fa fa-angle-double-right"></i> RẠP/GIÁ VÉ</a>
+					</li>
+					<li>
+						<a href=""><i class="fa fa-angle-double-right"></i> TUYỂN DỤNG</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-3 f-icons">
+				<div>
+					<h5>KẾT NỐI GALAXY CINEMA</h5>
+					<i class="fa fa-facebook-official"></i>
+					<i class="fa fa-youtube-square"></i>
+					<i class="fa fa-instagram"></i>
+				</div>
+				<div class="dowload-icons">
+					<h5>DOWNLOAD APP</h5>
+					<i class="fa fa-apple"></i>
+					<i class="fa fa-android"></i>
+				</div>
+			</div>
+			<hr>
+			<div class="w100"></div>
+		</div>
+		<div>
+			<div class="row border-top border-muted">
+				<div class="col-md-12">
+					<a href=""><img src="img/galaxy-logo-footer.png"></a>
+					<div class="footer-para">
+						<p>
+							Công Ty Cổ Phần Phim Thiên Ngân, Tầng 5, Toà Nhà Mặt Trời Sông Hồng, 23 Phan Chu Trinh, Phường Phan Chu Trinh, Quận Hoàn Kiếm, Hà Nội
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="plugins/bootstrap-4.1.0/js/bootstrap.js"></script>
+</html>
